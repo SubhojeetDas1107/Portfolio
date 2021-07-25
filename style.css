@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    opacity: 0.5;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    opacity: 0.5;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(img.jpg) no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+
+.headings{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.btn{
+padding: 10px 35px;
+background-color: transparent;
+border: 1px solid white;
+color: white;
+outline: none;
+transition: .6s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 5px white, 0 0 10px black, 0 0 15px black;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 50px;
+}
+
+#pic{
+    display: flex;
+}
+
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.galler img{
+    height: 240px;
+    width: 360px;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
