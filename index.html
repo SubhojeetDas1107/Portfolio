@@ -1,52 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Home Page | Subhojeet Das</title>
+    <title>Portfolio | Subhojeet Das</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:900px)" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-width:695px)" href="phone1.css">
+
 </head>
+
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#education">My Skills</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
     </nav>
+
     <section id="home">
-        <div class="main">
-            <h1 class="headings">
-                I am <br>SUBHOJEET DAS
-            </h1>
-            <button class="btn">Hire Me</button>
+        <h1 class="heading">HEY, IT'S</h1>
+        <h1 class="heading">SUBHOJEET DAS</h1>
+        <br><br>
+        <p>WELCOME TO MY PORTFOLIO</p>
+    </section>
+
+    <section id="portfolio">
+        <h1 class="heading">PORTFOLIO</h1>
+        <div class="gallery">
+            <img src="Images/img (1).jpeg" alt="">
+            <img src="Images/img (2).jpeg" alt="">
+            <img src="Images/img (3).jpeg" alt="">
+            <img src="Images/img (4).jpeg" alt="">
+            <img src="Images/img (5).jpg" alt="">
+            <img src="Images/img (6).jpg" alt="">
         </div>
     </section>
-    <section id="about">
-        <h1 class="headings">ABOUT ME</h1>
-        <div id="pic">
-            <img src="img.jpg">
-            <div id="intro">
-                <h2>SUBHOJEET DAS</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime id mollitia quidem enim quod aperiam necessitatibus temporibus quis dignissimos, culpa consequuntur deserunt ullam tempora maiores obcaecati pariatur odio similique commodi amet natus incidunt accusantium dolor nesciunt ea? Facere doloribus exercitationem adipisci quibusdam. Laboriosam, fugiat, eaque nam quaerat, debitis at porro esse perspiciatis deserunt non et earum. Quidem tenetur nobis, nihil repellendus, similique molestiae, placeat cum minima fugit sint culpa laudantium repudiandae modi provident impedit. Officia odio voluptates dolor quidem, esse minima nesciunt provident quas, error sapiente laboriosam pariatur. Aspernatur fugit voluptatem odit, itaque sapiente tempora quisquam nulla molestias pariatur officia!</p>
+
+    <section id="education">
+        <h1 class="heading">MY SKILLS</h1>
+        <div class="columns">
+            <div class="box">
+                <h2>Web Developer</h2>
+                <p>I have decent knowledge about web development specially front end using HTML and CSS.</p>
+            </div>
+            <div class="box">
+                <h2>Programmer</h2>
+                <p>Languages I know are: Advanced in C++, Intermediate in Python, Basics in Java.</p>
+            </div>
+            <div class="box">
+                <h2>UX/UI Designer</h2>
+                <p>I can create user-friendly interfaces that enable users to understand how to use complex technical
+                    products.</p>
+            </div>
+            <div class="box">
+                <h2>Database Manager</h2>
+                <p>I have decent knowledge in MySQL (Advanced), MS Access (Advanced), Oracle (Intermediate).</p>
             </div>
         </div>
     </section>
-    <section id="portfolio">
-        <h1 class="headings">
-            PORTFOLIO
-        </h1>
-        <div class="gallery">
-            <img src="img.jpg">
-            <img src="img.jpg">
-            <img src="img.jpg">
-            <img src="img.jpg">
-            <img src="img.jpg">
-            <img src="img.jpg">
+
+    <section id="about">
+        <h1 class="heading">ABOUT ME</h1>
+        <div class="about">
+            <img src="img.jpg" alt="My Pic">
+            <div class="name">
+                <h2>Hi! I'm Subhojeet Das</h2>
+                <p>I'm a first year student in Computer Science Engineering of Techno Inetrnational New Town (also known
+                    as TINT). I'm currently living in Boplur whereas I have completed my primary and secondary education
+                    in Arambagh Vivekananda Academy. My hobbies are playing Cricket, Coding, web developing and
+                    exploring new places and new things. Coming to my strengths, I am a quick learner, punctual and hard
+                    worker, responsible, flexible and adoptable according to situations. My weakness - can't deny
+                    someone when he/she asks for help, straight forward as I don't like backbiting, easy believing in
+                    anyone. My goal is to join a reputed company where I can utilise my skills and knowledge for the
+                    upliftment of company and where I will get learning environment to boost my career. </p>
+            </div>
         </div>
     </section>
+
+    <section id="contact">
+        <h1 class="heading">CONTACT ME</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="message" id="message" cols="70" rows="20" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; Subhojeet Das. All rights reserved!
+        </div>
+    </footer>
 </body>
+
 </html>

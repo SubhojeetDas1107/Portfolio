@@ -1,0 +1,55 @@
+/* Navbar */
+.navbar ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Headings */
+.heading{
+    font-size: 1.3rem;
+}
+
+/* Gallery Images */
+.gallery img{
+    width: 360px;
+    height: 240px;
+}
+
+/* About Section */
+.about{
+    flex-direction: column;
+}
+.about h2{
+    text-align: center;
+}
+
+.about img{
+    width: 200px;
+    height: 200px;
+    padding: 0px 15px;
+}
+/* Message box */
+#message{
+    width: 40%;
+    height: 200px;
+}
+
+/* Boxes */
+.box{
+    height: 150px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+.box h2{
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.box p{
+    color: black;
+    font-size: .8rem;
+}
